@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Stock Market App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Indian Stock Market Portfolio Optimizer</h1>
+        <div class="portfolio">
+            <h2>Add Stocks</h2>
+            <input type="text" id="stockInput" placeholder="Enter stock symbol (e.g., RELIANCE)">
+            <button id="addStockBtn">Add Stock</button>
+            <ul id="stockList"></ul>
+        </div>
+        <div class="charts">
+            <h2>Historical Chart (Last 5 Years)</h2>
+            <canvas id="historicalChart"></canvas>
+        </div>
+        <div class="financials">
+            <h2>Financial Ratios (Last 5 Years)</h2>
+            <table id="financialTable">
+                <thead>
+                    <tr>
+                        <th>Year</th>
+                        <th>P/E Ratio</th>
+                        <th>Debt/Equity</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        <div class="shareholding">
+            <h2>Shareholding Information</h2>
+            <div id="shareholdingInfo"></div>
+        </div>
+        <div class="news">
+            <h2>Stock Related News</h2>
+            <div id="newsFeed"></div>
+        </div>
+        <div class="optimal-weights">
+            <h2>Optimal Portfolio Weights</h2>
+            <div id="optimalWeights"></div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
